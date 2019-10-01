@@ -4,10 +4,10 @@
 # Assignment: M2
 # Date: 09/30/2019
 
-This program uses a Markov model to analyze the transition probabilities
-between sequences of pixels in a target image, and uses these
-probabilities, in combination with pictures of Mac Miller on Instagram,
-to create a mosaic.
+The Mac Miller Markov Mosaic uses a Markov model to analyze the
+transition probabilities between sequences of pixels in a target
+image, and uses these probabilities, in combination with pictures
+of Mac Miller on Instagram, to create a mosaic.
 
 The decision to represent states as unique sequences of pixels was
 inspired by William Anderson's article "Using Machine Learning to Make
