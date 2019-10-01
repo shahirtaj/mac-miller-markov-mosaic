@@ -1,7 +1,7 @@
-# Name(s): Shahir Taj
-# Course: CSCI 3725
-# Assignment: M2
-# Date: 09/30/2019
+Name(s): Shahir Taj
+Course: CSCI 3725
+Assignment: M2
+Date: 09/30/2019
 
 This program uses a Markov model to analyze the transition probabilities
 between sequences of pixels in a target image, and uses these
