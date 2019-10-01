@@ -3,8 +3,8 @@ Course: CSCI 3725</br>
 Assignment: M2</br>
 Date: 09/30/2019
 
-This program uses a Markov model to analyze the transition probabilities
-between sequences of pixels in a target image, and uses these
+The Mac Miller Markov Mosaic uses a Markov model to analyze the transition
+probabilities between sequences of pixels in a target image, and uses these
 probabilities, in combination with pictures of Mac Miller on Instagram,
 to create a mosaic.
 
