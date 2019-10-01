@@ -1,6 +1,6 @@
-Name(s): Shahir Taj
-Course: CSCI 3725
-Assignment: M2
+Name(s): Shahir Taj</br>
+Course: CSCI 3725</br>
+Assignment: M2</br>
 Date: 09/30/2019
 
 This program uses a Markov model to analyze the transition probabilities
