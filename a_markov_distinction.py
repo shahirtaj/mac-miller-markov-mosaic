@@ -117,12 +117,12 @@ def gen_mosaic(input_images, output_data, target_size):
     # resize and get the average rgb value of each input image
     for image in input_images:
         image.thumbnail((INPUT_IMAGE_WIDTH, INPUT_IMAGE_HEIGHT))
-        image_colors.append(getAverageRGB(image))
+        image_colors.append(get_average_rgb(image))
     
     image_matches = []
     # find the best input image for each pixel in the target image
     for pixel_color in output_data:
-        match_index = getBestMatchIndex(pixel_color, image_colors) 
+        match_index = get_best_match_index(pixel_color, image_colors) 
         image_matches.append(input_images[match_index])
     
     # initialize the mosaic
@@ -141,7 +141,7 @@ def gen_mosaic(input_images, output_data, target_size):
     return mosaic
     
 
-def getAverageRGB(image): 
+def get_average_rgb(image): 
     """ (image) -> tuple
         
     Return the average RGB value of all of the colors in an image.
@@ -156,7 +156,7 @@ def getAverageRGB(image):
     return tuple(numpy.average(image_array.reshape(w*h, d), axis=0))
 
 
-def getBestMatchIndex(pixel_color, image_colors): 
+def get_best_match_index(pixel_color, image_colors): 
     """ (tuple, list) -> int
         
     Return the index of the image that is the best color match with
