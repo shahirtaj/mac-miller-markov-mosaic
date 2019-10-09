@@ -17,7 +17,9 @@ on GeeksforGeeks. All of the images used to create the mosaic were
 downloaded from https://www.instagram.com/macmillerdivine/.
 """
 
-import glob, random, numpy
+import glob
+import random
+import numpy
 from PIL import Image
 
 INPUT_IMAGE_WIDTH = 10
@@ -76,7 +78,7 @@ class MarkovModel:
         
         cur_state = tuple(start_state)
         # while size of the ouput data is less than size of the input data
-        while (len(self.output_data) < self.num_states):
+        while len(self.output_data) < self.num_states:
             # transition to a possible state
             next_state = random.choice(self.transition_probabilities[cur_state])
             # add the last item of the next state to the output data
@@ -151,7 +153,7 @@ def get_average_rgb(image):
     """
     
     image_array = numpy.array(image) 
-    w,h,d = image_array.shape
+    w, h, d = image_array.shape
     
     return tuple(numpy.average(image_array.reshape(w*h, d), axis=0))
 
@@ -204,7 +206,7 @@ def main():
         else:
             input_images.append(image)
     
-    if input_images == []: 
+    if not input_images:
         print("No input images found in " + input_filepath + ". Exiting.") 
         exit() 
  
@@ -214,7 +216,7 @@ def main():
     target_data = list(target_image.getdata())
     n = int(input("Enter the order of the Markov chain (must be less than " +
                   str(target_num_pixels) + "): "))
-    if n >= target_num_pixels: # order must be less than total number of pixels
+    if n >= target_num_pixels:  # order must be less than total number of pixels
         print("Order is too large. Exiting.") 
         exit()
     
