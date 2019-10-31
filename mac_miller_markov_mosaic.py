@@ -77,7 +77,7 @@ class MarkovModel:
         self.output_data = list(start_state)
         
         cur_state = tuple(start_state)
-        # while size of the ouput data is less than size of the input data
+        # while size of the output data is less than size of the input data
         while len(self.output_data) < self.num_states:
             # transition to a possible state
             next_state = random.choice(self.transition_probabilities[cur_state])
@@ -93,7 +93,7 @@ class MarkovModel:
         Return a formatted string representation of this Markov Model.
         """
         
-        return ("A Markov Model of order " + order + " with " + num_states +
+        return ("A Markov Model of order " + self.order + " with " + self.num_states +
                 " states in its state space.")
     
     def __repr__(self):
@@ -193,6 +193,7 @@ def main():
         target_image = Image.open(target_filepath)
     except FileNotFoundError:
         print("The file " + target_filepath + " was not found.")
+        exit()
     
     # read input images
     input_images = []
