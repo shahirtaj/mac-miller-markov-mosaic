@@ -12,7 +12,7 @@ of Mac Miller on Instagram, to create a mosaic.
 The decision to represent states as unique sequences of pixels was
 inspired by William Anderson's article "Using Machine Learning to Make
 Art." The gen_mosaic(), get_average_rgb(), and get_best_match_index()
-methods were heavily inspired by the "Implementing Photomosaics" tutorial
+functions were heavily inspired by the "Implementing Photomosaics" tutorial
 on GeeksforGeeks. All of the images used to create the mosaic were
 downloaded from https://www.instagram.com/macmillerdivine/.
 """
