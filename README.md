@@ -13,3 +13,6 @@ were heavily inspired by the "Implementing Photomosaics" tutorial on
 GeeksforGeeks.
 - All of the images used to create the mosaic were
 downloaded from https://www.instagram.com/macmillerdivine/.
+
+## License
+This project is distributed under the MIT License. See the [LICENSE](LICENSE) file for more information.
